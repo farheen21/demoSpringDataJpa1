@@ -1,0 +1,1 @@
+package com.springJpa.demoSpringDataJpa.repository;import com.springJpa.demoSpringDataJpa.model.Employee;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;import java.util.Optional;public interface EmployeeRepository extends JpaRepository<Employee , Long> {   Optional<List<Employee>> findByCity(String emp_city);}
